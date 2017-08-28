@@ -1,0 +1,79 @@
+.wrapper{
+  background-color: #dee1e3;
+}
+header {
+  height: 190px;
+  background-image: none;
+}
+h1{
+  font: 72px Supermolot-Light-Italic;
+  margin-left: 115px;
+}
+.logincard{
+  position: relative;
+  margin: 15px auto;
+  height: 382px;
+  width: 1170px;
+  background-color: #f6f6f6;
+}
+.enterside, .registerside{
+  padding-left: 30px;
+  padding-top: 20px;
+  height: 362px;
+  width: 554px;
+  background-color: #ffffff;
+  display: inline-block;
+}
+.registerside{
+  position: absolute;
+  margin-left: 2px;
+}
+h2{
+  font: 24px Supermolot-Bold-Italic;
+}
+h3{
+  font: 14px Supermolot-Light;
+  color: #999999;
+  margin: 24px 0 13px 0;
+}
+.input{
+  width: 503px;
+  height: 47px;
+  background-color: #e9e9e9;
+  border: none;
+  font: 16px Supermolot-Light;
+  padding-left: 17px;
+}
+.entbtn{
+  width: 93px;
+  height: 47px;
+  font: 18px Supermolot-Light;
+  background: #ffffff;
+  border: 5px solid #ed1651;
+  margin-top: 30px;
+}
+.entbtn:hover{
+  background-color: #ed1651;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.forgotbtn{
+  margin-left: 33px;
+  font: 14px Supermolot-Light;
+  color: #ed1651;
+}
+.regbtn{
+  display: block;
+  width: 220px;
+  height: 47px;
+  background-color: #ed1651;
+  font: 18px Supermolot-Light;
+  text-decoration: none;
+  color: #ffffff;
+  line-height: 47px;
+  text-align: center;
+}
+footer{
+  margin-top: 38px;
+}

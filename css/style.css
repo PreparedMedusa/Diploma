@@ -1,0 +1,393 @@
+/* position center */
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  text-align:center; /*For IE6 Shenanigans*/
+}
+.wrapper{
+  position: relative;
+  width:1400px;
+  margin:0 auto;
+  text-align:left;
+  background-color: #e4e0d6;
+  height: auto;
+  overflow: hidden;
+}
+
+header {
+  background-image: url(../images/background1.jpg);
+  background-repeat: no-repeat;
+  height: 709px;
+  width: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+a:hover{
+  transition: all 0.4s;
+}
+
+.bgtext{
+  position: absolute;
+  top: 244px;
+  left: -123px;
+  font: 341px Supermolot-Bold-Italic;
+  color: rgba(51, 51, 51, 0.05);
+  letter-spacing: -7px;
+}
+
+.label {
+  position: absolute;
+  width: 170px;
+  height: 120px;
+  background-color: #ed1651;
+  margin-top: 27px;
+  margin-left: 115px;
+  color: #ffffff;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+}
+
+.label > span:first-child {
+  display: block;
+  padding-top: 35px;
+  font: 33px Supermolot;
+  line-height: 17px;
+}
+.label > span:last-child {
+  font: 41px Supermolot-Bold;
+  line-height: 44px;
+}
+.menu {
+  position: absolute;
+  margin-left:285px;
+  margin-top:27px;
+  height: 60px;
+  line-height: 60px;
+  background-color: #ffffff;
+  width: 1000px;
+}
+
+.menu > ul {
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+  height: 60px;
+  display: inline-block;
+}
+
+.menu > ul > li {
+  display: inline-block;
+  font-family: Supermolot;
+  font-size: 14px;
+  text-align:center;
+  width: 130px;
+}
+
+.menu > ul > li > a {
+  display: inline-block;
+  width: 100%;
+  text-decoration: none;
+  color: #000000;
+}
+
+.menu > ul > li > a:hover {
+  color: #ffffff;
+  background-color: #021563;
+  width: 100%;
+  height: 100%;
+}
+.navbar-login {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 188px;
+  height: 60px;
+}
+
+.navbar-login > li:first-child {
+  height: 100%;
+  width: 40%;
+  color: #ed1651;
+}
+
+.navbar-login > li:last-child {
+  height: 100%;
+  width: 60%;
+}
+
+.navbar-login > li > a {
+  font-family: 'Supermolot-Light';
+  text-decoration-style: dashed;
+  color: inherit;
+}
+.navbar-login > li> ul{
+  position: relative;
+  display: none;
+}
+.navbar-login > li:hover > ul{
+  display: block;
+}
+.navbar-login > li > ul > li{
+  display: block;
+  height: 50px;
+  background-color: #ffffff;
+  line-height: 50px;
+}
+.navbar-login > li > ul > li > a {
+  display: inline-block;
+  width: 100%;
+  text-decoration: none;
+  color: #000000;
+}
+.navbar-login > li > ul > li > a:hover{
+  background-color: #021563;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+}
+.logoutbtn{
+  width: 100%;
+  height: 50px;
+  background-color: #ffffff;
+  border: none;
+  font: 14px Supermolot;
+}
+.logoutbtn:hover{
+  color: #ffffff;
+  background-color: #021563;
+  width: 100%;
+  height: 50px;
+  cursor: pointer;
+}
+#basket {
+  position: absolute;
+  margin-left: 1097px;
+  margin-top: 87px;
+  width: 188px;
+  height: 57px;
+  background-color: #021563;
+  text-decoration: none;
+}
+#totalCost {
+  position: absolute;
+  margin-top: 9px;
+  margin-left: 14px;
+  font: 20px Supermolot-Bold;
+  color: #ffffff;
+}
+#rub {
+  padding-left: 7px;
+  font: 14px Supermolot;
+  color: #ffffff;
+}
+#total{
+  position: absolute;
+  margin-top: 13px;
+  margin-left: 14px;
+  font: 12px Supermolot;
+  color: #999999;
+}
+#basket > img{
+  position: absolute;
+  top: 12px;
+  right: 14px;
+}
+
+#promo{
+  position: absolute;
+  width: 562px;
+  height: 321px;
+  margin-left: 115px;
+  margin-top: 147px;
+}
+#nameprom{
+  font: 72px Supermolot-Bold-Italic;
+  letter-spacing: -2px;
+  line-height: 44px;
+}
+#typeprom{
+  font: 72px Supermolot-Light-Italic;
+  letter-spacing: -3px;
+  line-height: 65px;
+}
+#noteprom{
+  font: 16px Supermolot;
+  color: #ffffff;
+  line-height: 35px;
+}
+#promotext{
+  position: absolute;
+  margin-top: 89px;
+}
+#BtnShowPromo{
+  position: absolute;
+  right: 41px;
+  bottom: 0px;
+  width: 249px;
+  height: 59px;
+  border: solid 3px #ed1651;
+  color: #ffffff;
+  line-height: 59px;
+  text-align: center;
+  text-decoration: none;
+  font-family: Supermolot-Italic;
+  font-size: 18px;
+}
+#BtnShowPromo:hover{
+  background-color: #0060ad;
+}
+
+.slider{
+  margin: 24px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1170px;
+}
+.item{
+  height: 311px;
+  display: flex;
+  justify-content:flex-start;
+  align-items: flex-end;
+  flex-basis: 24%;
+  transition: all 0.5s;
+  padding-left: 20px;
+}
+.item:hover{
+  flex-basis: 39%;
+}
+.item > a{
+  text-decoration: none;
+  color: inherit;
+}
+.item-1{
+  background: url(../images/slide1.jpg);
+  background-position: center 0;
+  flex-shrink: 0;
+}
+.item-2{
+  background: url(../images/slide2.jpg);
+  background-position: center;
+  flex-shrink: 0;
+}
+.item-3{
+  background: url(../images/slide3.jpg);
+  background-position: center -25px;
+  flex-basis: 50%;
+  color: #ffffff;
+  flex-grow: 1;
+}
+.slidername{
+  font: 32px Supermolot-Bold-Italic;
+}
+.sliderdisc{
+  font: 32px Supermolot-Light-Italic;
+}
+.popularitemsblock{
+  overflow: hidden;
+  height: 400px;
+  width: 1170px;
+  margin: auto;
+  background-color: #f6f6f6;
+}
+.headpopularitems{
+  position: relative;
+  height: 76px;
+  width: 1170px;
+  color: #021562;
+  line-height: 76px;
+  background-color: #ffffff;
+}
+.popularitemsname{
+  font-family: Supermolot;
+  font-size: 24px;
+  padding-left: 27px;
+}
+.nav{
+  position: absolute;
+  right: 30px;
+  top: 3px;
+}
+.line{
+  width: 9990px;
+  margin: 0;
+  display: inline-flex;
+}
+.product{
+  position: relative;
+  display: inline-block;
+  width:291px;
+  height: 322px;
+  background-color: #d1d3d4;
+  margin: 2px 2px 0 0;
+}
+#productname{
+  position: absolute;
+  bottom: 0;
+  width: inherit;
+  height: 86px;
+  background-color: #ffffff;
+}
+.aboutus{
+  position: relative;
+  margin: 24px auto;
+  margin-bottom: 0;
+  width: 1170px;
+  height: 311px;
+  justify-content: center;
+  align-items: center;
+  background: url(../images/aboutus.jpg);
+  background-position: center -259px;
+}
+.aboutusname{
+  position: absolute;
+  font: 24px Supermolot-Bold-Italic;
+  color: #021562;
+  margin: 35px 500px;
+}
+.history{
+  position: absolute;
+  font: 14px Supermolot-Light;
+  width: 530px;
+  margin:79px 500px;
+  line-height: 24px;
+}
+.footer{
+  position: relative;
+  width: 1170px;
+  height: 59px;
+  background-color: #01104c;
+  color: #ffffff;
+  margin: 24px auto;
+}
+.copyright{
+  position: absolute;
+  color: #999999;
+  font: 11px Supermolot-Light;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.copyright > a{
+  text-decoration: none;
+  color: inherit;
+}
+.copyright>a:hover{
+  color: #ffffff;
+}
+.upbtn{
+  position: absolute;
+  right: 28px;
+  font: 16px Supermolot-Light;
+  margin-top: 19px;
+}
+.upbtn > a{
+  text-decoration: none;
+  color: inherit;
+}
+.upbtn > img{
+  margin-left: 4px;
+}

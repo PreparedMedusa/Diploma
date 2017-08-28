@@ -1,0 +1,113 @@
+.wrapper{
+  background-color: #dee1e3;
+}
+header {
+  height: 190px;
+  background-image: none;
+}
+footer{
+  margin-top: 38px;
+}
+h1{
+  font: 72px Supermolot-Light-Italic;
+  margin-left: 115px;
+}
+h2{
+  font: 24px Supermolot-Bold-Italic;
+  margin-top: 42px;
+  margin-bottom: -9px;
+}
+h3{
+  font: 14px Supermolot-Light;
+  color: #999999;
+  margin: 17px 0 5px 0;
+}
+h2:first-child{
+  margin-top: 23px;
+  margin-bottom: 0;
+}
+.accountcard{
+  position: relative;
+  margin: 15px auto;
+  height: 983px;
+  width: 1170px;
+  background-color: #f6f6f6;
+}
+.infoside, .orderside{
+  padding-left: 30px;
+  display: inline-block;
+  height: 983px;
+  width: 554px;
+  background-color: #ffffff;
+}
+.orderside{
+  position: absolute;
+  margin-left: 2px;
+}
+.orderlist{
+  height: 910px;
+  overflow-y: auto;
+}
+.input{
+  width: 503px;
+  height: 47px;
+  background-color: #e9e9e9;
+  border: none;
+  font: 16px Supermolot-Light;
+  padding-left: 17px;
+}
+.adress > div{
+  display: inline-block;
+}
+.adress > div:last-child{
+  margin-left: 42px;
+}
+.adress > div > input{
+  width: 220px;
+}
+.order{
+  position: relative;
+  width: 530px;
+  height: 70px;
+  margin-bottom: 15px;
+}
+.order>div{
+  display: inline-block;
+  height: 70px;
+}
+.order>div>h1{
+  font: 24px Supermolot-Light;
+  margin: 0;
+}
+.order>div>h2{
+  font: 17px Supermolot-Light;
+  margin: 0;
+}
+.order>div>h3{
+  font: 12px Supermolot-Light;
+  color: #999999;
+  margin: 0;
+}
+.status{
+  position: absolute;
+  right: 0px;
+  vertical-align: middle;
+  font: 36px Supermolot-Light;
+  color: #ed1651;
+}
+.savebtn{
+  display: block;
+  width: 134px;
+  height: 47px;
+  background-color: #ed1651;
+  font: 18px Supermolot-Light;
+  text-decoration: none;
+  color: #ffffff;
+  line-height: 47px;
+  text-align: center;
+  margin-top: 34px;
+  border: none;
+}
+.savebtn:hover{
+  cursor: pointer;
+}

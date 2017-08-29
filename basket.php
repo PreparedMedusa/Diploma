@@ -50,7 +50,7 @@ session_start();
       </table>
       <div class="ordercardbottom">
         <a href="index.php" class="backbtn">Вернуться к покупкам</a>
-        <div class="total">Итого:<span>72 640руб.</span></div>
+        <div class="total">Итого:<span>73 640руб.</span></div>
         <a href="checkout.php" class="confirmbtn">Оформить заказ</a>
       </div>
     </div>

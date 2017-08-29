@@ -1,24 +1,100 @@
 @font-face {
   font-family: 'Supermolot';
-  src: url('../fonts/Supermolot.woff');
+  src: url('../fonts/supermolot-webfont.eot');
+  src: url('../fonts/Supermolot.otf'),
+       url('../fonts/supermolot-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/supermolot-webfont.woff2') format('woff2'),
+       url('../fonts/supermolot-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
   font-family: 'Supermolot-Bold';
-  src: url('../fonts/Supermolot Bold.otf');
+  src: url('../fonts/supermolot_bold-webfont.eot');
+  src: url('../fonts/Supermolot Bold.otf'),
+       url('../fonts/supermolot_bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/supermolot_bold-webfont.woff2') format('woff2'),
+       url('../fonts/supermolot_bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
   font-family: 'Supermolot-Light';
-  src: url('../fonts/Supermolot Light.otf');
+  src: url('../fonts/supermolot_light-webfont.eot');
+  src: url('../fonts/supermolot_light-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/supermolot_light-webfont.woff2') format('woff2'),
+       url('../fonts/supermolot_light-webfont.woff') format('woff'),
+       url('../fonts/Supermolot Light.otf');
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
   font-family: 'Supermolot-Italic';
-  src: url('../fonts/Supermolot Italic.otf');
+  src: url('../fonts/supermolot_italic-webfont.eot');
+  src: url('../fonts/supermolot_italic-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/supermolot_italic-webfont.woff2') format('woff2'),
+       url('../fonts/supermolot_italic-webfont.woff') format('woff'),
+       url('../fonts/Supermolot Italic.otf');
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
   font-family: 'Supermolot-Bold-Italic';
-  src: url('../fonts/Supermolot Bold Italic.otf');
+  src: url('../fonts/supermolot_bold_italic-webfont.eot');
+  src: url('../fonts/supermolot_bold_italic-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/supermolot_bold_italic-webfont.woff2') format('woff2'),
+       url('../fonts/supermolot_bold_italic-webfont.woff') format('woff'),
+       url('../fonts/Supermolot Bold Italic.otf');
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
   font-family: 'Supermolot-Light-Italic';
-  src: url('../fonts/Supermolot Light Italic.otf');
+  src: url('../fonts/supermolot_light_italic-webfont.eot');
+  src: url('../fonts/supermolot_light_italic-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/supermolot_light_italic-webfont.woff2') format('woff2'),
+       url('../fonts/supermolot_light_italic-webfont.woff') format('woff'),
+       url('../fonts/Supermolot Light Italic.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+    font-family: 'Supermolot-Black-Italic';
+    src: url('../fonts/supermolot_black_italic-webfont.eot');
+    src: url('../fonts/supermolot_black_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/supermolot_black_italic-webfont.woff2') format('woff2'),
+         url('../fonts/supermolot_black_italic-webfont.woff') format('woff'),
+         url('../fonts/Supermolot Black Italic.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Supermolot-Black';
+    src: url('../fonts/supermolot_black-webfont.eot');
+    src: url('../fonts/supermolot_black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/supermolot_black-webfont.woff2') format('woff2'),
+         url('../fonts/supermolot_black-webfont.woff') format('woff'),
+         url('../fonts/Supermolot Black.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Supermolot-Thin-italic';
+    src: url('../fonts/supermolot_thin_italic-webfont.eot');
+    src: url('../fonts/supermolot_thin_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/supermolot_thin_italic-webfont.woff2') format('woff2'),
+         url('../fonts/supermolot_thin_italic-webfont.woff') format('woff'),
+         url('../fonts/Supermolot Thin Italic.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Supermolot-Thin';
+    src: url('../fonts/supermolot_thin-webfont.eot');
+    src: url('../fonts/supermolot_thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/supermolot_thin-webfont.woff2') format('woff2'),
+         url('../fonts/supermolot_thin-webfont.woff') format('woff'),
+         url('../fonts/Supermolot Thin.otf');
+    font-weight: normal;
+    font-style: normal;
 }

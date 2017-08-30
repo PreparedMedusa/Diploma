@@ -61,7 +61,6 @@ a:hover{
   margin-left:285px;
   margin-top:27px;
   height: 60px;
-  line-height: 60px;
   background-color: #ffffff;
   width: 1000px;
 }
@@ -77,6 +76,7 @@ a:hover{
   font-family: Supermolot;
   font-size: 14px;
   text-align:center;
+  line-height: 60px;
   width: 130px;
 }
 .menu > ul > li > a {

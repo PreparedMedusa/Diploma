@@ -17,7 +17,9 @@ session_start();
 </head>
 <body>
   <div class="wrapper">
-    <?php require 'header.php'; ?>
+    <header>
+     <?php require 'header.php'; ?>
+    </header>
     <h1>КОРЗИНА</h1>
     <div class="ordercard">
       <table>

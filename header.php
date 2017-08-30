@@ -1,4 +1,3 @@
- <header>
    <a href="index.php">
      <div class="label">
        <span>SUPER</span>
@@ -23,7 +22,7 @@
   <ul class="navbar-login">
     <?php
     if (isset($_SESSION['log']))
-     {echo "<li style='width:100%;'><a href='#'><img src='images/logo.png' alt='logo' style='margin-right: 3px; vertical-align: middle;'>".$_SESSION['log']."</a>
+     {echo "<li style='width:100%;'><a href='#' style='text-decoration-style: solid;'><img src='images/logo.png' alt='logo' style='margin-right: 3px; vertical-align: middle;'>".$_SESSION['log']."</a>
              <ul>
                <li><a href='account.php'>Личный кабинет</a></li>
                <li><form action='index.php' method='post'><input type=submit name='out' class='logoutbtn' value='Выйти'></form></li>
@@ -33,5 +32,5 @@
     else{echo "<li><a href='login.php'><img src='images/logo.png' alt='logo' style='margin-right:7px; vertical-align: middle; '>Войти</a></li>
                <li><a href='registr.php'>Регистрация</a></li>";}
     ?>
+  </ul>
  </div>
-</header>

@@ -1,20 +1,20 @@
 @font-face {
   font-family: 'Supermolot';
   src: url('../fonts/supermolot-webfont.eot');
-  src: url('../fonts/Supermolot.otf'),
-       url('../fonts/supermolot-webfont.eot?#iefix') format('embedded-opentype'),
+  src: url('../fonts/supermolot-webfont.eot?#iefix') format('embedded-opentype'),
        url('../fonts/supermolot-webfont.woff2') format('woff2'),
-       url('../fonts/supermolot-webfont.woff') format('woff');
+       url('../fonts/supermolot-webfont.woff') format('woff'),
+       url('../fonts/Supermolot.otf');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Supermolot-Bold';
   src: url('../fonts/supermolot_bold-webfont.eot');
-  src: url('../fonts/Supermolot Bold.otf'),
-       url('../fonts/supermolot_bold-webfont.eot?#iefix') format('embedded-opentype'),
+  src: url('../fonts/supermolot_bold-webfont.eot?#iefix') format('embedded-opentype'),
        url('../fonts/supermolot_bold-webfont.woff2') format('woff2'),
-       url('../fonts/supermolot_bold-webfont.woff') format('woff');
+       url('../fonts/supermolot_bold-webfont.woff') format('woff'),
+       url('../fonts/Supermolot Bold.otf');
   font-weight: normal;
   font-style: normal;
 }

@@ -15,7 +15,6 @@ body{
   height: auto;
   overflow: hidden;
 }
-
 header {
   background-image: url(../images/background1.jpg);
   background-repeat: no-repeat;
@@ -24,11 +23,9 @@ header {
   padding: 0;
   margin: 0;
 }
-
 a:hover{
   transition: all 0.4s;
 }
-
 .bgtext{
   position: absolute;
   top: 244px;
@@ -37,7 +34,6 @@ a:hover{
   color: rgba(51, 51, 51, 0.05);
   letter-spacing: -7px;
 }
-
 .label {
   position: absolute;
   width: 170px;
@@ -50,7 +46,6 @@ a:hover{
   text-align: center;
   text-decoration: none;
 }
-
 .label > span:first-child {
   display: block;
   padding-top: 35px;
@@ -70,7 +65,6 @@ a:hover{
   background-color: #ffffff;
   width: 1000px;
 }
-
 .menu > ul {
   padding: 0;
   margin: 0;
@@ -78,7 +72,6 @@ a:hover{
   height: 60px;
   display: inline-block;
 }
-
 .menu > ul > li {
   display: inline-block;
   font-family: Supermolot;
@@ -86,12 +79,10 @@ a:hover{
   text-align:center;
   width: 130px;
 }
-
 .menu > ul > li > a {
   display: inline-block;
   width: 100%;
 }
-
 .menu > ul > li > a:hover {
   color: #ffffff;
   background-color: #021563;
@@ -109,18 +100,15 @@ a:hover{
   width: 188px;
   height: 60px;
 }
-
 .navbar-login > li:first-child {
   height: 100%;
   width: 40%;
   color: #ed1651;
 }
-
 .navbar-login > li:last-child {
   height: 100%;
   width: 60%;
 }
-
 .navbar-login > li > a {
   font-family: 'Supermolot-Light';
   text-decoration-style: dashed;
@@ -198,7 +186,6 @@ a:hover{
   top: 12px;
   right: 14px;
 }
-
 #promo{
   position: absolute;
   width: 562px;
@@ -242,7 +229,6 @@ a:hover{
 #BtnShowPromo:hover{
   background-color: #0060ad;
 }
-
 .slider{
   margin: 24px auto;
   display: flex;
@@ -358,7 +344,7 @@ a:hover{
   margin:79px 500px;
   line-height: 24px;
 }
-.footer{
+footer{
   position: relative;
   width: 1170px;
   height: 59px;

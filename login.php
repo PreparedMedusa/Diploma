@@ -36,7 +36,9 @@ if ($_POST['submit']=="Войти")
 </head>
 <body>
  <div class="wrapper">
-  <?php require 'header.php'; ?>
+  <header>
+   <?php require 'header.php'; ?>
+  </header>
   <h1>ВХОД</h1>
   <div class="logincard">
     <div class="enterside">

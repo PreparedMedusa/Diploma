@@ -21,7 +21,9 @@ if ($_POST['out']=="Выйти")
 
   <body>
     <div class="wrapper">
-      <?php require 'header.php'; ?>
+      <header>
+       <?php require 'header.php'; ?>
+      </header>
       <h1>ЛИЧНЫЙ КАБИНЕТ</h1>
       <div class="accountcard">
         <div class="infoside">

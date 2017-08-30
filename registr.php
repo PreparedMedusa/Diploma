@@ -40,7 +40,9 @@ if ($_POST['registr']=="Зарегистрироваться")
 </head>
 <body>
  <div class="wrapper">
-  <?php require 'header.php';
+   <header>
+    <?php require 'header.php';
+    echo "</header>";
   if ($reg==1){
     echo "<h1>Регистрация прошла успешно!</h1>";
   }

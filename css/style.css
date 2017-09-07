@@ -275,6 +275,14 @@ a:hover{
 .sliderdisc{
   font: 32px Supermolot-Light-Italic;
 }
+.newitemsblock{
+  overflow: hidden;
+  height: 724px;
+  width: 1170px;
+  margin: auto;
+  background-color: #f6f6f6;
+  margin-top: -76px;
+}
 .popularitemsblock{
   overflow: hidden;
   height: 400px;
@@ -282,43 +290,100 @@ a:hover{
   margin: auto;
   background-color: #f6f6f6;
 }
-.headpopularitems{
+.headpopularitems, .headnewitems{
   position: relative;
-  height: 76px;
-  width: 1170px;
   color: #021562;
   line-height: 76px;
   background-color: #ffffff;
-}
-.popularitemsname{
   font-family: Supermolot;
   font-size: 24px;
   padding-left: 27px;
 }
-.nav{
-  position: absolute;
-  right: 30px;
-  top: 3px;
+.swiper-button-prev, .swiper-button-prev1{
+  background-image: url("../images/arrowLeft.png");
+  background-size: auto;
+  left:auto;
+  right: 48px;
 }
-.line{
-  width: 9990px;
-  margin: 0;
-  display: inline-flex;
+.swiper-button-next, .swiper-button-next1{
+  background-image: url("../images/arrowRight.png");
+  background-size: auto;
+  left:auto;
+  right: 25px;
 }
-.product{
-  position: relative;
-  display: inline-block;
-  width:291px;
-  height: 322px;
+.swiper-container{
+  width: 1170px;
+  height:648px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.swiper-slide{
+  text-align: center;
+  font-size: 18px;
   background-color: #d1d3d4;
-  margin: 2px 2px 0 0;
+  height: 322px;
+  margin-top: 2px;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
 }
-#productname{
+.swiper-slide > img{
+  position: absolute;
+  top: 0;
+  width: 292px;
+  height: 235px;
+  font: 35px Supermolot;
+  color: #efeeef;
+  text-align: left;
+  border-bottom: 1px solid #f6f6f6;
+  background-position: center;
+}
+.slider-bottom{
   position: absolute;
   bottom: 0;
   width: inherit;
   height: 86px;
   background-color: #ffffff;
+}
+.slide-name{
+  position: relative;
+  width: 176px;
+  height: inherit;
+}
+.slide-name>span{
+  position: absolute;
+  top: 25px;
+  left: 30px;
+  font: 14px Supermolot;
+  color: #555555;
+}
+.slide-price{
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  font: 18px Supermolot-Light-Italic;
+  color: #ed1651;
+}
+.slide-price>span{
+  font-size: 15px;
+}
+.slide-oldprice{
+  position: absolute;
+  top: 47px;
+  right: 30px;
+  font: 14px Supermolot-Light-Italic;
+  color: #999999;
+  text-decoration: line-through;
 }
 .aboutus{
   position: relative;

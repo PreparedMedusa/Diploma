@@ -25,6 +25,10 @@ if ($_POST['registr']=="Зарегистрироваться")
 }
 /*Создание таблицы юзеров*/
 /*pg_query($dbconn, "create table users_sshop(id serial, email varchar, pass varchar, name varchar)");*/
+/*Создание таблицы товаров*/
+/*pg_query($dbconn, "create table wakeboards(id serial, name varchar, discription varchar, colors varchar, price varchar)");*/
+/*Импорт базы из csv*/
+/*pg_query($dbconn, "copy wakeboards(id,name,discription,colors,price) FROM 'C:\OpenServer\domains\Diploma\data\wakeboards.csv' WITH DELIMITER ';' CSV");*/
 ?>
 <!DOCTYPE html>
 <html lang="ru">

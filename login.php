@@ -15,8 +15,18 @@ if ($_POST['submit']=="Войти")
     $y=pg_fetch_all($x);
     if ($y==true)
     {
-      header('Location: index.php');
       $_SESSION['log']=$_POST['Email'];
+      foreach ($y as $key => $value)
+      {
+        if ($value['role']==1)
+        {
+          header('Location: cms/index.php');
+        }
+        else
+        {
+          header('Location: index.php');
+        }
+      }
     }
     else {
       echo "<h2>Не верная связка Email/Пароль. Попробуйте ещё раз.</h2>";

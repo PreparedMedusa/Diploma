@@ -18,21 +18,21 @@ body{
   box-shadow: 0 0 10px rgba(26, 26, 26, 0.79);
 }
 .menu-wrapper{
-  top: 41px;
   background-color: #34495e;
   width: 180px;
   min-height: 1085px;
   height: auto;
   float: left;
 }
-.menu-item{
+.menu>li{
   font: 14px proxima-nova;
   text-transform: uppercase;
   margin-top: 18px;
   height: 48px;
   line-height: 48px;
 }
-.menu-item>a>img {
+.menu>li>a>img {
+  color: #2ecc71;
   margin-left: 10px;
   vertical-align: middle;
   margin-right: 10px;
@@ -40,16 +40,55 @@ body{
   height: 31px;
   background-position: center;
 }
-.menu-item>a{
+.menu>li>a{
   text-decoration: none;
   color: #95a5a6;
   width: 100%;
   height: 100%;
   display: inline-block;
 }
-.menu-item>a:hover{
+.menu>li>a:hover{
   background-color: #2b3d4f;
   color: #fff;
 }
-.content{
+.orders{
+  background-color: #243342;
+}
+h1{
+  position: absolute;
+  left: 201px;
+  top: 20px;
+  font: 48px proxima-nova-light;
+  color: #34495e;
+}
+table{
+  position: relative;
+  top: 90px;
+  width: 738px;
+  margin: auto;
+  background-color: #ffffff;
+  border-collapse: collapse;
+  border-radius: 2px;
+  border: 1px solid #d8dde2;
+}
+th{
+  height: 45px;
+  font: 14px proxima-nova-bold;
+  text-transform: uppercase;
+  color: #95a5a6;
+}
+td{
+  height: 55px;
+  border-top: 1px solid #d8dde2;
+  text-align: center;
+}
+.row{
+  position: relative;
+}
+.row:hover{
+  border-left: 4px solid #8e44ad;
+  background-color: #f6f8fc;
+}
+select{
+
 }

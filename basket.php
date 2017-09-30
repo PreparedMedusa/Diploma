@@ -12,7 +12,6 @@ session_start();
   <link href="css/fonts.css" rel="stylesheet" type="text/css"/>
   <link href="css/style.css" rel="stylesheet" type="text/css"/>
   <link href="css/basket_style.css" rel="stylesheet" type="text/css"/>
-  <script type="text/javascript" src="js/cssrefresh.js"></script>
   <title>Super SHOP - Корзина</title>
 </head>
 <body>

@@ -15,7 +15,6 @@ if ($_POST['out']=="Выйти")
   <link href="css/fonts.css" rel="stylesheet" type="text/css" />
   <link href="css/style.css" rel="stylesheet" type="text/css" />
   <link href="css/media.css" rel="stylesheet" type="text/css" />
-  <script type="text/javascript" src="js/cssrefresh.js"></script>
   <title>Админ-панель</title>
 </head>
 <body>

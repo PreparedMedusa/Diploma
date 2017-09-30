@@ -41,7 +41,6 @@ if ($_POST['submit']=="Войти")
   <link href="css/fonts.css" rel="stylesheet" type="text/css"/>
   <link href="css/style.css" rel="stylesheet" type="text/css"/>
   <link href="css/login_style.css" rel="stylesheet" type="text/css"/>
-  <script type="text/javascript" src="js/cssrefresh.js"></script>
   <title>Super SHOP - Вход</title>
 </head>
 <body>

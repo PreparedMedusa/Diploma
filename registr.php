@@ -39,7 +39,6 @@ if ($_POST['registr']=="Зарегистрироваться")
   <link href="css/fonts.css" rel="stylesheet" type="text/css"/>
   <link href="css/style.css" rel="stylesheet" type="text/css"/>
   <link href="css/regist_style.css" rel="stylesheet" type="text/css"/>
-  <script type="text/javascript" src="js/cssrefresh.js"></script>
   <title>Super SHOP - Регистрация</title>
 </head>
 <body>

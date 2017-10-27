@@ -18,6 +18,7 @@ body{
   box-shadow: 0 0 10px rgba(26, 26, 26, 0.79);
 }
 .menu-wrapper{
+  position: relative;
   background-color: #34495e;
   width: 180px;
   min-height: 1085px;
@@ -49,10 +50,29 @@ body{
 }
 .menu>li>a:hover{
   background-color: #2b3d4f;
-  color: #fff;
 }
-.orders{
+.menu>li:nth-child(1) a{
   background-color: #243342;
+  color: #ffffff;
+}
+.menu-login{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font: 16px proxima-nova;
+  color: #ffffff;
+  margin-bottom: 22px;
+}
+.logoutbtn{
+  font: 16px proxima-nova;
+  text-decoration: underline;
+  color: #2ecc71;
+  background-color: #34495e;
+  border: none;
+}
+.logoutbtn:hover{
+  cursor: pointer;
 }
 h1{
   position: absolute;
@@ -80,15 +100,58 @@ th{
 td{
   height: 55px;
   border-top: 1px solid #d8dde2;
-  text-align: center;
-}
-.row{
-  position: relative;
 }
 .row:hover{
   border-left: 4px solid #8e44ad;
   background-color: #f6f8fc;
+  cursor: pointer;
+}
+tbody>tr>td:nth-child(1) span:nth-child(1),
+tbody>tr>td:nth-child(1) span:nth-child(2),
+tbody>tr>td:nth-child(4){
+  font: 14px proxima-nova;
+}
+tbody>tr>td:nth-child(1) span:nth-child(3),
+tbody>tr>td:nth-child(2) select,
+tbody>tr>td:nth-child(3),
+tbody>tr>td:nth-child(5){
+  font: 14px proxima-nova-semibold;
+}
+tbody>tr>td:nth-child(1) span:nth-child(1){
+  color: #3498db;
+}
+tbody>tr>td:nth-child(1) span:nth-child(2){
+  color: #7f8c8d;
+}
+tbody>tr>td:nth-child(4){
+  color: #9c9c9c;
+}
+tbody>tr>td:nth-child(5) a{
+  color: #8e44ad;
 }
 select{
-
+  border: 1px solid transparent;
+  background-color: transparent;
+  cursor: pointer;
+  appearance: none;            /* remove arrow        */
+  -webkit-appearance: none;    /* remove arrow Chrome */
+  -moz-appearance: none;       /* remove arrow FF     */
+}
+select::-ms-expand{
+    display: none;             /* remove arrow IE     */
+}
+select>option:nth-child(1){
+  color: #0a8eaf;
+}
+select>option:nth-child(2){
+  color: #1ba254;
+}
+select>option:nth-child(3){
+  color: #ad5a00;
+}
+select>option:nth-child(4){
+  color: #a01ba2;
+}
+select>option:nth-child(5){
+  color: #6c6c6c;
 }

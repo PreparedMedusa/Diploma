@@ -1,6 +1,6 @@
 <?php
 session_start();
-if ($_POST['out']=="Выйти")
+if ($_POST['out']=="выйти")
   {
     unset($_SESSION['log']);
     header('Location: ../index.php');
@@ -25,12 +25,12 @@ if ($_POST['out']=="Выйти")
       </a>
       <ul class="menu">
         <li class="orders">
-          <a href="">
-            <img src="images/orders.png" alt="">заказы
+          <a href="#">
+            <img src="images/ordersGreen.png" alt="">заказы
           </a>
         </li>
         <li class="users">
-          <a href="">
+          <a href="users.php">
             <img src="images/users.png" alt="">пользователи
           </a>
         </li>
@@ -45,6 +45,12 @@ if ($_POST['out']=="Выйти")
           </a>
         </li>
       </ul>
+      <div class="menu-login">
+        <?php echo $_SESSION['log']; ?>
+        <form action='index.php' method='post'>
+          <input type=submit name='out' class='logoutbtn' value='выйти'>
+        </form>
+      </div>
     </div>
     <div class="content">
       <h1>ЗАКАЗЫ</h1>
@@ -55,9 +61,12 @@ if ($_POST['out']=="Выйти")
           <th>сумма</th>
           <th colspan="2">время заказа</th>
         </tr>
+        <tbody>
         <tr class="row">
           <td class="item_1">
-            №4831 от slipknot666_666@mail.ru
+            <span>№4831</span>
+            <span>от</span>
+            <span>slipknot666_666@mail.ru</span>
           </td>
           <td class="item_2">
             <select>
@@ -82,7 +91,9 @@ if ($_POST['out']=="Выйти")
         </tr>
         <tr class="row">
           <td class="item_1">
-            №4831 от slipknot666_666@mail.ru
+            <span>№4831</span>
+            <span>от</span>
+            <span>slipknot666_666@mail.ru</span>
           </td>
           <td class="item_2">
             <select>
@@ -107,7 +118,9 @@ if ($_POST['out']=="Выйти")
         </tr>
         <tr class="row">
           <td class="item_1">
-            №4831 от slipknot666_666@mail.ru
+            <span>№4831</span>
+            <span>от</span>
+            <span>slipknot666_666@mail.ru</span>
           </td>
           <td class="item_2">
             <select>
@@ -130,6 +143,7 @@ if ($_POST['out']=="Выйти")
             </a>
           </td>
         </tr>
+      </tbody>
       </table>
     </div>
   </div>

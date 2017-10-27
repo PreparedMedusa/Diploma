@@ -1,0 +1,26 @@
+.menu>li:nth-child(1) a{
+  background-color: #34495e;
+  color: #95a5a6;
+}
+.menu>li:nth-child(2) a{
+  background-color: #243342;
+  color: #ffffff;
+}
+tbody>tr>td:nth-child(1){
+  font: 16px proxima-nova-semibold;
+}
+tbody>tr>td:nth-child(2),
+tbody>tr>td:nth-child(3){
+  font: 16px proxima-nova;
+}
+tbody>tr>td:nth-child(4) a{
+  font: 14px proxima-nova-semibold;
+  color: #8e44ad;
+}
+tr>th:nth-child(1){
+  
+}
+tr>th:nth-child(2),
+tr>th:nth-child(3){
+  text-align: center;
+}

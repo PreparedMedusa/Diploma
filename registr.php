@@ -1,35 +1,4 @@
-<?php
-session_start();
-$dbconn=pg_connect("host=localhost port=5432 dbname=mypgsql user=postgres password=mysql");
-if ($dbconn===false)
-{
-  echo "Не удаётся открыть БД!<br>";
-  exit(0);
-}
-if ($_POST['registr']=="Зарегистрироваться")
-{
-  $str="select * from users_sshop where email = '".$_POST['Email']."';";
-  $x=pg_query($dbconn,$str);
-  $y=pg_fetch_all($x);
-  if ($y===false)
-  {
-    pg_query($dbconn, "insert into users_sshop (email,pass,name) values
-    ('".$_POST['Email']."','".$_POST['Pass']."','".$_POST['Name']."');");
-
-    $reg=1;
-  }
-  else
-  {
-    echo "<h2>Пользователь с данным Email уже зарегистрирован!</h2>";
-  }
-}
-/*Создание таблицы юзеров*/
-/*pg_query($dbconn, "create table users_sshop(id serial, email varchar, pass varchar, name varchar)");*/
-/*Создание таблицы товаров*/
-/*pg_query($dbconn, "create table wakeboards(id serial, name varchar, discription varchar, colors varchar, price varchar)");*/
-/*Импорт базы из csv*/
-/*pg_query($dbconn, "copy wakeboards(id,name,discription,colors,price) FROM 'C:\OpenServer\domains\Diploma\data\wakeboards.csv' WITH DELIMITER ';' CSV");*/
-?>
+<?php require 'db.php'; ?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>

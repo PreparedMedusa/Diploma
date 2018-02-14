@@ -1,10 +1,4 @@
-<?php
-session_start();
-if ($_POST['out']=="Выйти")
-  {
-    unset($_SESSION['log']);
-  }
-?>
+<?php require 'db.php'; ?>
   <!DOCTYPE html>
   <html lang="ru">
 

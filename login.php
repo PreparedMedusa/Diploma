@@ -1,38 +1,4 @@
-<?php
-session_start();
-if (isset($_SESSION['log'])){
-  header('Location: index.php');
-}
-$dbconn=pg_connect("host=localhost port=5432 dbname=mypgsql user=postgres password=mysql");
-if ($dbconn===false)
-{
-  echo "Не удаётся открыть БД!<br>";
-  exit(0);
-}
-if ($_POST['submit']=="Войти")
-  {
-    $x=pg_query($dbconn, "select * from users_sshop where email = '".$_POST['Email']."' and pass = '".$_POST['Pass']."';");
-    $y=pg_fetch_all($x);
-    if ($y==true)
-    {
-      $_SESSION['log']=$_POST['Email'];
-      foreach ($y as $key => $value)
-      {
-        if ($value['role']==1)
-        {
-          header('Location: cms/index.php');
-        }
-        else
-        {
-          header('Location: index.php');
-        }
-      }
-    }
-    else {
-      echo "<h2>Не верная связка Email/Пароль. Попробуйте ещё раз.</h2>";
-    }
-  }
-?>
+<?php require 'db.php'; ?>
 <!DOCTYPE html>
 <html lang="ru">
   <meta charset="utf-8">

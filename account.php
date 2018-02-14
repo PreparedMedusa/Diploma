@@ -1,13 +1,11 @@
+<?php require 'db.php'; ?>
 <?php
-session_start();
-if ($_POST['out']=="Выйти")
-  {
-    unset($_SESSION['log']);
-  }
+if ($_POST['submit']=="Сохранить"){
+  account_profile_edit();
+}
 ?>
   <!DOCTYPE html>
   <html lang="ru">
-
   <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="favicon.ico">
@@ -19,6 +17,7 @@ if ($_POST['out']=="Выйти")
   </head>
 
   <body>
+    <?php $user=account_profile(); ?>
     <div class="wrapper">
       <header>
        <?php require 'header.php'; ?>
@@ -26,34 +25,34 @@ if ($_POST['out']=="Выйти")
       <h1>ЛИЧНЫЙ КАБИНЕТ</h1>
       <div class="accountcard">
         <div class="infoside">
-          <form action="" method="post">
+          <form action="account.php" method="post">
             <h2>Ваши данные</h2>
             <h3>Контактное лицо (ФИО):</h3>
-            <input type='text' name='Name' class='input'>
+            <input type='text' name='name' class='input' value='<? echo $user['name']; ?>'>
             <h3>Контактный телефон</h3>
-            <input type='text' name='Phnamber' class='input'>
+            <input type='tel' name='phone' class='input' value='<? echo $user['phone']; ?>'>
             <h3>E-mail адрес:</h3>
-            <input type='email' name='Email' class='input' required>
+            <input type='email' name='email' class='input' value='<? echo $user['email']; ?>' required>
             <h2>Адрес доставки</h2>
             <h3>Город:</h3>
-            <input type='text' name='City' class='input'>
+            <input type='text' name='city' class='input' value='<? echo $user['city']; ?>'>
             <h3>Улица:</h3>
-            <input type='text' name='Street' class='input'>
+            <input type='text' name='street' class='input' value='<? echo $user['street']; ?>'>
             <div class="adress">
               <div>
                 <h3>Дом:</h3>
-                <input type='text' name='House' class='input'>
+                <input type='text' name='house' class='input' value='<? echo $user['house']; ?>'>
               </div>
               <div>
                 <h3>Квартира:</h3>
-                <input type='text' name='Flat' class='input'>
+                <input type='text' name='flat' class='input' value='<? echo $user['flat']; ?>'>
               </div>
             </div>
             <h2>Изменение пароля</h2>
             <h3>Введите новый пароль:</h3>
-            <input type='password' name='NewPass' class='input'>
+            <input type='password' name='newpass' class='input' value='<? echo $user['pass']; ?>' required>
             <h3>Повторите новый пароль:</h3>
-            <input type='password' name='PassRep' class='input'>
+            <input type='password' name='passrep' class='input' required>
             <input type="submit" name="submit" class="savebtn" value="Сохранить">
           </form>
         </div>

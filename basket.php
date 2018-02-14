@@ -1,7 +1,4 @@
-<?php
-session_start();
-
-?>
+<?php require 'db.php'; ?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>

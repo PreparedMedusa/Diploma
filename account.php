@@ -1,5 +1,6 @@
 <?php require 'db.php'; ?>
 <?php
+// Save changes in profile card
 if ($_POST['submit']=="Сохранить"){
   account_profile_edit();
 }

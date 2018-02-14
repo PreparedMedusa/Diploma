@@ -57,12 +57,14 @@ if ($_POST['out']=="Выйти")
   {
     unset($_SESSION['log']);
 }
-// Создание таблицы юзеров
+// Create table of users
 //pg_query($dbconn, "create table users_sshop(id serial, email varchar, pass varchar, name varchar, phone varchar, city varchar, street varchar, house varchar, flat varchar, role varchar DEFAULT 0)");
-// Создание таблицы товаров
+// Create table of items
 //pg_query($dbconn, "create table wakeboards(id serial, name varchar, discription varchar, colors varchar, price varchar)");
-// Импорт базы из csv
+// Import csv to db
 //pg_query($dbconn, "copy wakeboards(id,name,discription,colors,price) FROM 'C:\OpenServer\domains\Diploma\data\wakeboards.csv' WITH DELIMITER ';' CSV");
+// Root to Admin
+//pg_query($dbconn, "UPDATE users_sshop SET role=1 WHERE id=1;");
 
 function account_profile(){
     global $dbconn;
@@ -84,3 +86,15 @@ function account_profile_edit(){
       pass='".$_POST['newpass']."'
       where email = '".$_SESSION['log']."';");
 }
+function main_items($label){
+  global $dbconn;
+  $query=pg_query($dbconn,"select name, img[1], price from items_sshop where label = '".$label."';");
+  $items=pg_fetch_all($query);
+  return $items;
+}
+// function img_parse($id){
+//   global $dbconn;
+//   $query=pg_query($dbconn,"select img[1] from items_sshop where id = $id;");
+//   $images=pg_fetch_all($query);
+//   return $images;
+// }

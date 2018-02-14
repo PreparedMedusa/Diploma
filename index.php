@@ -37,102 +37,18 @@
         </div>
         <div class="swiper-container">
           <div class="swiper-wrapper">
+            <?php
+            $items=main_items('new');
+            foreach ($items as $item) {?>
             <div class="swiper-slide">
-              <img src="" alt="Изображение товара">
+              <img src=<?php echo $item['img'] ?> alt="Изображение товара">
               <div class="slider-bottom">
-                <div class="slide-name"><span>Самокат</div>
-                <span class="slide-price">4900<span>руб.</span></span>
-                <span class="slide-oldprice"></span>
+                <div class="slide-name"><span><?php echo $item['name'] ?></div>
+                <span class="slide-price"><span><?php echo $item['price'] ?><span>руб.</span></span>
+                <span class="slide-oldprice"><span></span>
               </div>
             </div>
-            <div class="swiper-slide">
-              <img src="1_1.jpg" alt="Изображение товара">
-              <div class="slider-bottom">
-                <div class="slide-name"><span>Вейкборд Harley LTD 2014</div>
-                <span class="slide-price">9900<span>руб.</span></span>
-                <span class="slide-oldprice">12990 руб.</span>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <img src="" alt="Изображение товара">
-              <div class="slider-bottom">
-                <div class="slide-name"><span>Вейкборд Wake park pro</div>
-                <span class="slide-price">9900<span>руб.</span></span>
-                <span class="slide-oldprice">12990 руб.</span>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <img src="" alt="Изображение товара">
-              <div class="slider-bottom">
-                <div class="slide-name"><span>Самокат</div>
-                <span class="slide-price">4900<span>руб.</span></span>
-                <span class="slide-oldprice"></span>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <img src="1_1.jpg" alt="Изображение товара">
-              <div class="slider-bottom">
-                <div class="slide-name"><span>Вейкборд Harley LTD 2014</div>
-                <span class="slide-price">9900<span>руб.</span></span>
-                <span class="slide-oldprice">12990 руб.</span>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <img src="" alt="Изображение товара">
-              <div class="slider-bottom">
-                <div class="slide-name"><span>Вейкборд Wake park pro</div>
-                <span class="slide-price">9900<span>руб.</span></span>
-                <span class="slide-oldprice">12990 руб.</span>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <img src="" alt="Изображение товара">
-              <div class="slider-bottom">
-                <div class="slide-name"><span>Самокат</div>
-                <span class="slide-price">4900<span>руб.</span></span>
-                <span class="slide-oldprice"></span>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <img src="1_1.jpg" alt="Изображение товара">
-              <div class="slider-bottom">
-                <div class="slide-name"><span>Вейкборд Harley LTD 2014</div>
-                <span class="slide-price">9900<span>руб.</span></span>
-                <span class="slide-oldprice">12990 руб.</span>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <img src="" alt="Изображение товара">
-              <div class="slider-bottom">
-                <div class="slide-name"><span>Вейкборд Wake park pro</div>
-                <span class="slide-price">9900<span>руб.</span></span>
-                <span class="slide-oldprice">12990 руб.</span>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <img src="" alt="Изображение товара">
-              <div class="slider-bottom">
-                <div class="slide-name"><span>Самокат</div>
-                <span class="slide-price">4900<span>руб.</span></span>
-                <span class="slide-oldprice"></span>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <img src="1_1.jpg" alt="Изображение товара">
-              <div class="slider-bottom">
-                <div class="slide-name"><span>Вейкборд Harley LTD 2014</div>
-                <span class="slide-price">9900<span>руб.</span></span>
-                <span class="slide-oldprice">12990 руб.</span>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <img src="" alt="Изображение товара">
-              <div class="slider-bottom">
-                <div class="slide-name"><span>Вейкборд Wake park pro</div>
-                <span class="slide-price">9900<span>руб.</span></span>
-                <span class="slide-oldprice">12990 руб.</span>
-              </div>
-            </div>
+            <?php } ?>
           </div>
         </div>
       </div>
@@ -148,54 +64,18 @@
         </div>
         <div class="swiper-container1">
           <div class="swiper-wrapper">
+            <?php
+            $items=main_items('hot');
+            foreach ($items as $item) {?>
             <div class="swiper-slide">
-              <img src="" alt="Изображение товара">
+              <img src=<?php echo $item['img'] ?> alt="Изображение товара">
               <div class="slider-bottom">
-                <div class="slide-name"><span>Самокат</div>
-                <span class="slide-price">4900<span>руб.</span></span>
-                <span class="slide-oldprice"></span>
+                <div class="slide-name"><span><?php echo $item['name'] ?></div>
+                <span class="slide-price"><span><?php echo $item['price'] ?><span>руб.</span></span>
+                <span class="slide-oldprice"><span></span>
               </div>
             </div>
-            <div class="swiper-slide">
-              <img src="1_1.jpg" alt="Изображение товара">
-              <div class="slider-bottom">
-                <div class="slide-name"><span>Вейкборд Harley LTD 2014</div>
-                <span class="slide-price">9900<span>руб.</span></span>
-                <span class="slide-oldprice">12990 руб.</span>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <img src="" alt="Изображение товара">
-              <div class="slider-bottom">
-                <div class="slide-name"><span>Вейкборд Wake park pro</div>
-                <span class="slide-price">9900<span>руб.</span></span>
-                <span class="slide-oldprice">12990 руб.</span>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <img src="" alt="Изображение товара">
-              <div class="slider-bottom">
-                <div class="slide-name"><span>Самокат</div>
-                <span class="slide-price">4900<span>руб.</span></span>
-                <span class="slide-oldprice"></span>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <img src="1_1.jpg" alt="Изображение товара">
-              <div class="slider-bottom">
-                <div class="slide-name"><span>Вейкборд Harley LTD 2014</div>
-                <span class="slide-price">9900<span>руб.</span></span>
-                <span class="slide-oldprice">12990 руб.</span>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <img src="" alt="Изображение товара">
-              <div class="slider-bottom">
-                <div class="slide-name"><span>Вейкборд Wake park pro</div>
-                <span class="slide-price">9900<span>руб.</span></span>
-                <span class="slide-oldprice">12990 руб.</span>
-              </div>
-            </div>
+            <?php } ?>
           </div>
         </div>
       </div>

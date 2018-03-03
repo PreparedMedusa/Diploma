@@ -96,14 +96,18 @@
       var swiper = new Swiper('.swiper-container', {
         slidesPerView: 4,
         slidesPerColumn: 2,
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
+        navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+        },
         spaceBetween: 2
       });
       var swiper1 = new Swiper('.swiper-container1', {
         slidesPerView: 4,
-        nextButton: '.swiper-button-next1',
-        prevButton: '.swiper-button-prev1',
+        navigation: {
+        nextEl: '.swiper-button-next1',
+        prevEl: '.swiper-button-prev1',
+        },
         spaceBetween: 2
       });
     </script>

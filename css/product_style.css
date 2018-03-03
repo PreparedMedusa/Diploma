@@ -5,3 +5,42 @@ header {
   height: 190px;
   background-image: none;
 }
+.product_container{
+  width: 1170px;
+  margin: auto;
+  background-color: #fff;
+}
+.product_container>div{
+  display: inline-block;
+}
+.foto-container{
+  width: 470px;
+  height: 577px;
+}
+.swiper-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.swiper-slide {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.gallery-top {
+  height: 80%;
+  width: 100%;
+}
+.gallery-thumbs {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+.gallery-thumbs .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+.gallery-thumbs .swiper-slide-active {
+  opacity: 1;
+}

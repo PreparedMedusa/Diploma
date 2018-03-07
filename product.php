@@ -26,7 +26,7 @@
           <div class="swiper-container gallery-top">
             <div class="swiper-wrapper">
               <?php
-              $items=main_items('new');
+              $items=main_items('label','new');
               foreach ($items as $item) {?>
                 <div class="swiper-slide" style="background-image:url(<?php echo $item['img'] ?>)"></div>
               <?php } ?>
@@ -38,7 +38,7 @@
           <div class="swiper-container gallery-thumbs">
           <div class="swiper-wrapper">
             <?php
-            $items=main_items('new');
+            $items=main_items('label','new');
             foreach ($items as $item) {?>
             <div class="swiper-slide" style="background-image:url(<?php echo $item['img'] ?>)"></div>
             <?php } ?>

@@ -60,9 +60,9 @@ if ($_POST['out']=="Выйти")
 // Create table of users
 //pg_query($dbconn, "create table users_sshop(id serial, email varchar, pass varchar, name varchar, phone varchar, city varchar, street varchar, house varchar, flat varchar, role varchar DEFAULT 0)");
 // Create table of items
-//pg_query($dbconn, "create table wakeboards(id serial, name varchar, discription varchar, colors varchar, price varchar)");
+//pg_query($dbconn, "create table items_sshop(id serial, art smallint, name varchar, discription varchar, category_id smallint, label char(4), img char(255)[], types varchar, price integer, oldprice integer)");
 // Import csv to db
-//pg_query($dbconn, "copy wakeboards(id,name,discription,colors,price) FROM 'C:\OpenServer\domains\Diploma\data\wakeboards.csv' WITH DELIMITER ';' CSV");
+//pg_query($dbconn, "copy items_sshop(id,name,discription,price) FROM 'C:\OpenServer\domains\Diploma\data\wakeboards.csv' WITH DELIMITER ';' CSV");
 // Root to Admin
 //pg_query($dbconn, "UPDATE users_sshop SET role=1 WHERE id=1;");
 

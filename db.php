@@ -86,9 +86,9 @@ function account_profile_edit(){
       pass='".$_POST['newpass']."'
       where email = '".$_SESSION['log']."';");
 }
-function main_items($label){
+function main_items($column, $value){
   global $dbconn;
-  $query=pg_query($dbconn,"select name, img[1], price from items_sshop where label = '".$label."';");
+  $query=pg_query($dbconn,"select name, img[1], price from items_sshop where $column = '".$value."';");
   $items=pg_fetch_all($query);
   return $items;
 }

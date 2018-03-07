@@ -38,7 +38,7 @@
         <div class="swiper-container">
           <div class="swiper-wrapper">
             <?php
-            $items=main_items('new');
+            $items=main_items('label','new');
             foreach ($items as $item) {?>
             <div class="swiper-slide">
               <img src=<?php echo $item['img'] ?> alt="Изображение товара">
@@ -65,7 +65,7 @@
         <div class="swiper-container1">
           <div class="swiper-wrapper">
             <?php
-            $items=main_items('hot');
+            $items=main_items('label','hot');
             foreach ($items as $item) {?>
             <div class="swiper-slide">
               <img src=<?php echo $item['img'] ?> alt="Изображение товара">

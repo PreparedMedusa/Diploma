@@ -88,7 +88,7 @@ function account_profile_edit(){
 }
 function main_items($column, $value){
   global $dbconn;
-  $query=pg_query($dbconn,"select name, img[1], price from items_sshop where $column = '".$value."';");
+  $query=pg_query($dbconn,"select id, name, discription, img[1], types, price from items_sshop where $column = '".$value."';");
   $items=pg_fetch_all($query);
   return $items;
 }

@@ -26,7 +26,7 @@
           <div class="swiper-container gallery-top">
             <div class="swiper-wrapper">
               <?php
-              $items=main_items('label','new');
+              $items=main_items('id',$_GET['id']);
               foreach ($items as $item) {?>
                 <div class="swiper-slide" style="background-image:url(<?php echo $item['img'] ?>)"></div>
               <?php } ?>
@@ -38,7 +38,7 @@
           <div class="swiper-container gallery-thumbs">
           <div class="swiper-wrapper">
             <?php
-            $items=main_items('label','new');
+            $items=main_items('id',$_GET['id']);
             foreach ($items as $item) {?>
             <div class="swiper-slide" style="background-image:url(<?php echo $item['img'] ?>)"></div>
             <?php } ?>
@@ -47,11 +47,13 @@
         </div>
         <div class="info-container">
           <h1>Название товара</h1>
+          <?php echo $item['name'] ?>
           <h2>Описание товара</h2>
-          <h2>Выберите вариант:</h2>
+          <?php echo $item['discription'];
+          if($item['types']!=null){echo '<h2>Выберите вариант:</h2>'.$item['types'];}?>
         </div>
         <div class="price-container">
-
+          <?php echo $item['price'] ?>руб.
         </div>
       </div>
       <?php require 'footer.php'; ?>

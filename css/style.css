@@ -337,16 +337,21 @@ a:hover{
   -webkit-align-items: center;
   align-items: center;
 }
-.swiper-slide > img{
-  position: absolute;
-  top: 0;
-  width: 292px;
-  height: 235px;
+.swiper-slide > a> img{
+  width: inherit;
+  height: inherit;
   font: 35px Supermolot;
   color: #efeeef;
   text-align: left;
   border-bottom: 1px solid #f6f6f6;
   background-position: center;
+}
+.swiper-slide > a{
+  width: 292px;
+  height: 235px;
+  position: absolute;
+  top: 0;
+  text-align: left;
 }
 .slider-bottom{
   position: absolute;

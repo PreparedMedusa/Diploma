@@ -41,11 +41,15 @@
             $items=main_items('label','new');
             foreach ($items as $item) {?>
             <div class="swiper-slide">
-              <img src=<?php echo $item['img'] ?> alt="Изображение товара">
+              <a href="product.php?id=<?php echo $item['id'] ?>">
+                <img src=<?php echo $item['img'] ?> alt="Изображение товара">
+              </a>
               <div class="slider-bottom">
-                <div class="slide-name"><span><?php echo $item['name'] ?></div>
-                <span class="slide-price"><span><?php echo $item['price'] ?><span>руб.</span></span>
-                <span class="slide-oldprice"><span></span>
+                <a href="product.php?id=<?php echo $item['id'] ?>">
+                  <div class="slide-name"><span><?php echo $item['name'] ?></div>
+                  <span class="slide-price"><span><?php echo $item['price'] ?><span>руб.</span></span>
+                  <span class="slide-oldprice"><span></span>
+                </a>
               </div>
             </div>
             <?php } ?>
@@ -68,11 +72,15 @@
             $items=main_items('label','hot');
             foreach ($items as $item) {?>
             <div class="swiper-slide">
-              <img src=<?php echo $item['img'] ?> alt="Изображение товара">
+              <a href="product.php?id=<?php echo $item['id'] ?>">
+                <img src=<?php echo $item['img'] ?> alt="Изображение товара">
+              </a>
               <div class="slider-bottom">
-                <div class="slide-name"><span><?php echo $item['name'] ?></div>
-                <span class="slide-price"><span><?php echo $item['price'] ?><span>руб.</span></span>
-                <span class="slide-oldprice"><span></span>
+                <a href="product.php?id=<?php echo $item['id'] ?>">
+                  <div class="slide-name"><span><?php echo $item['name'] ?></div>
+                  <span class="slide-price"><span><?php echo $item['price'] ?><span>руб.</span></span>
+                  <span class="slide-oldprice"><span></span>
+                </a>
               </div>
             </div>
             <?php } ?>

@@ -41,11 +41,11 @@
             $items=main_items('label','new');
             foreach ($items as $item) {?>
             <div class="swiper-slide">
-              <a href="product.php?id=<?php echo $item['id'] ?>">
+              <a href="product.php?id=<?php echo $item['id'] ?>&category=<?php echo $item['category_id'] ?>">
                 <img src=<?php echo $item['img'] ?> alt="Изображение товара">
               </a>
               <div class="slider-bottom">
-                <a href="product.php?id=<?php echo $item['id'] ?>">
+                <a href="product.php?id=<?php echo $item['id'] ?>&category=<?php echo $item['category_id'] ?>">
                   <div class="slide-name"><span><?php echo $item['name'] ?></div>
                   <span class="slide-price"><span><?php echo $item['price'] ?><span>руб.</span></span>
                   <span class="slide-oldprice"><span></span>
@@ -72,11 +72,11 @@
             $items=main_items('label','hot');
             foreach ($items as $item) {?>
             <div class="swiper-slide">
-              <a href="product.php?id=<?php echo $item['id'] ?>">
+              <a href="product.php?id=<?php echo $item['id'] ?>&category=<?php echo $item['category_id'] ?>">
                 <img src=<?php echo $item['img'] ?> alt="Изображение товара">
               </a>
               <div class="slider-bottom">
-                <a href="product.php?id=<?php echo $item['id'] ?>">
+                <a href="product.php?id=<?php echo $item['id'] ?>&category=<?php echo $item['category_id'] ?>">
                   <div class="slide-name"><span><?php echo $item['name'] ?></div>
                   <span class="slide-price"><span><?php echo $item['price'] ?><span>руб.</span></span>
                   <span class="slide-oldprice"><span></span>

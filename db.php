@@ -88,13 +88,15 @@ function account_profile_edit(){
 }
 function main_items($column, $value){
   global $dbconn;
-  $query=pg_query($dbconn,"select id, name, discription, img[1], types, price from items_sshop where $column = '".$value."';");
+  $query=pg_query($dbconn,"select id, name, discription, category_id, img[1], types, price from items_sshop where $column = '".$value."';");
   $items=pg_fetch_all($query);
   return $items;
 }
-// function img_parse($id){
-//   global $dbconn;
-//   $query=pg_query($dbconn,"select img[1] from items_sshop where id = $id;");
-//   $images=pg_fetch_all($query);
-//   return $images;
-// }
+function get_category($id){
+  global $dbconn;
+  $query=pg_query($dbconn,"select * from category where id = $id;");
+  $categories=pg_fetch_all($query);
+  foreach ($categories as $category){
+    return $category['name'];
+  }
+}

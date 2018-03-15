@@ -343,12 +343,12 @@ a:hover{
   font: 35px Supermolot;
   color: #efeeef;
   text-align: left;
-  border-bottom: 1px solid #f6f6f6;
   background-position: center;
 }
 .swiper-slide > a{
   width: 292px;
   height: 235px;
+  border-bottom: 1px solid #f6f6f6;
   position: absolute;
   top: 0;
   text-align: left;
@@ -362,7 +362,7 @@ a:hover{
 }
 .slide-name{
   position: relative;
-  width: 176px;
+  width: 170px;
   height: inherit;
 }
 .slide-name>span{

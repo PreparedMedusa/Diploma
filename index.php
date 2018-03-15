@@ -39,16 +39,22 @@
           <div class="swiper-wrapper">
             <?php
             $items=main_items('label','new');
-            foreach ($items as $item) {?>
+            foreach ($items as $item) {
+            $image=explode(",",$item['img']);?>
             <div class="swiper-slide">
               <a href="product.php?id=<?php echo $item['id'] ?>&category=<?php echo $item['category_id'] ?>">
-                <img src=<?php echo $item['img'] ?> alt="Изображение товара">
+                <img src=<?php echo $image[0] ?> alt="Изображение товара">
               </a>
               <div class="slider-bottom">
                 <a href="product.php?id=<?php echo $item['id'] ?>&category=<?php echo $item['category_id'] ?>">
-                  <div class="slide-name"><span><?php echo $item['name'] ?></div>
-                  <span class="slide-price"><span><?php echo $item['price'] ?><span>руб.</span></span>
-                  <span class="slide-oldprice"><span></span>
+                  <div class="slide-name"><span><?php echo $item['name'] ?></span></div>
+                  <span class="slide-price"><?php echo $item['price'] ?><span>руб.</span></span>
+                  <span class="slide-oldprice">
+                    <?php
+                    if ($item['oldprice']!=0){
+                    echo $item['oldprice'].'<span>руб.</span>';
+                  }?>
+                  </span>
                 </a>
               </div>
             </div>
@@ -70,16 +76,22 @@
           <div class="swiper-wrapper">
             <?php
             $items=main_items('label','hot');
-            foreach ($items as $item) {?>
+            foreach ($items as $item) {
+            $image=explode(",",$item['img']);?>
             <div class="swiper-slide">
               <a href="product.php?id=<?php echo $item['id'] ?>&category=<?php echo $item['category_id'] ?>">
-                <img src=<?php echo $item['img'] ?> alt="Изображение товара">
+                <img src=<?php echo $image[0] ?> alt="Изображение товара">
               </a>
               <div class="slider-bottom">
                 <a href="product.php?id=<?php echo $item['id'] ?>&category=<?php echo $item['category_id'] ?>">
-                  <div class="slide-name"><span><?php echo $item['name'] ?></div>
-                  <span class="slide-price"><span><?php echo $item['price'] ?><span>руб.</span></span>
-                  <span class="slide-oldprice"><span></span>
+                  <div class="slide-name"><span><?php echo $item['name'] ?></span></div>
+                  <span class="slide-price"><?php echo $item['price'] ?><span>руб.</span></span>
+                  <span class="slide-oldprice">
+                    <?php
+                    if ($item['oldprice']!=0){
+                    echo $item['oldprice'].'<span>руб.</span>';
+                  }?>
+                  </span>
                 </a>
               </div>
             </div>

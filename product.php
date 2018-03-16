@@ -57,15 +57,53 @@
           <?php echo '<h2>'.$item['discription'].'</h2>';
           if($item['types']!=null){
             $option=explode(",",$item['types']);
-            echo '<span>Выберите вариант:</span><select>';
+            echo '<span>Выберите вариант:</span><div class="select-wrapper"><select>';
             for($n=0; $option[$n]!=false; $n++){
               echo '<option>'.$option[$n].'</option>';
             }
-            echo '</select>';
+            echo '</select></div>';
           }?>
         </div>
         <div class="price-container">
-          <?php echo $item['price'] ?>руб.
+          <div class="buy-box">
+            <div class="price-box">
+              <span class="price-old">
+                <?php
+                if ($item['oldprice']!=0){
+                echo $item['oldprice'].'руб.';
+                }?>
+              </span>
+              <span class="price">
+                <?php echo $item['price'] ?>руб.
+              </span>
+              <span class="stock">
+                <img src="images/stock.png" alt="">
+                есть в наличии
+              </span>
+            </div>
+            <input type="submit" class="buybtn" value="">
+          </div>
+          <div class="shipping-icons">
+            <img src="images/shipping.png" alt="">
+            <div class="shipping-text">
+              <p>бесплатная доставка</p>
+              по всей России
+            </div>
+          </div>
+          <div class="shipping-icons">
+            <img src="images/support.png" alt="">
+            <div class="shipping-text">
+              <p>горячая линия</p>
+              8 800 000-00-00
+            </div>
+          </div>
+          <div class="shipping-icons">
+            <img src="images/gifts.png" alt="">
+            <div class="shipping-text">
+              <p>подарки</p>
+              каждому покупателю
+            </div>
+          </div>
         </div>
       </div>
       <!-- Another items from same category block -->
@@ -93,7 +131,7 @@
                     <?php
                     if ($item['oldprice']!=0){
                     echo $item['oldprice'].'<span>руб.</span>';
-                  }?>
+                    }?>
                   </span>
                 </a>
               </div>

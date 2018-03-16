@@ -101,6 +101,99 @@ h1{
   display: inline-block;
   margin-top: 30px;
   font: 14px Supermolot-Light;
+  line-height: 30px;
+}
+.select-wrapper{
+  display: inline-block;
+  position: relative;
+  width: 229px;
+  height: 30px;
+  margin-left: 8px;
+}
+.select-wrapper:hover {
+  box-shadow: 0px 0px 3px gray;
+}
+.select-wrapper select {
+  width: 229px;
+  height: 30px;
+  padding-left: 12px;
+  border: 0;
+  border-radius: 0;
+  appearance: none;            /* remove arrow        */
+  -webkit-appearance: none;    /* remove arrow Chrome */
+  -moz-appearance: none;       /* remove arrow FF     */
+  font: 14px Supermolot-Light;
+  background: url(../images/select-ico.png) 95% no-repeat #e9e9e9;
+}
+.select-wrapper select::-ms-expand{
+    display: none;             /* remove arrow IE     */
+}
+.buy-box{
+  width: 221px;
+  height: 187px;
+  margin-top: 39px;
+  border: 1px solid #DBDBDB;
+  text-align: center;
+}
+.price-box{
+  position: relative;
+  width: 221px;
+  height: 117px;
+  border: 1px solid #DBDBDB;
+}
+.price-old{
+  display: block;
+  position: absolute;
+  width: 120px;
+  left: 50%;
+  top: 20px;
+  margin-left: -60px;
+  font: 16px Supermolot-Light-Italic;
+  color: #999999;
+  text-decoration: line-through;
+}
+.price{
+  display: block;
+  margin-top: 40px;
+  font: 26px Supermolot-Bold;
+  color: #Ed1651;
+}
+.stock{
+  display: block;
+  margin-top: 10px;
+  font: 14px Supermolot-Light;
+  text-align: center;
+}
+.buybtn{
+  margin-top: 17px;
+  width: 129px;
+  height: 39px;
+  background-color: #Ed1651;
+  font: 16px Supermolot-Bold;
+  color: #ffffff;
+  border: none;
+  background-image: url(../images/buy-icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.shipping-icons{
+  position: relative;
+  margin-top: 25px;
+}
+.shipping-text, .shipping-icons>img{
+  display: inline-block;
+  font: 14px Supermolot-Light;
+  color: #999999;
+}
+.shipping-text{
+  position: absolute;
+  top: 4px;
+  left: 58px;
+  letter-spacing: -1px;
+}
+.shipping-text>p{
+  font: 14px Supermolot-Bold;
+  text-transform: uppercase;
 }
 .swiper-slide > a{
   top:1px;

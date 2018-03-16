@@ -1,0 +1,23 @@
+.wrapper{
+  background-color: #dee1e3;
+}
+header {
+  height: 190px;
+  background-image: none;
+}
+h1{
+  font: 72px Supermolot-Thin-Italic;
+  letter-spacing: -3px;
+  text-transform: uppercase;
+  line-height: 60px;
+  margin-left: 113px;
+}
+.content-wrapper{
+  width: 1170px;
+  background-color: #f6f6f6;
+  margin: auto;
+}
+.top-bottom-side{
+  height: 78px;
+  background-color: #ffffff;
+}

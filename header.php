@@ -13,10 +13,10 @@
    </a>
  <div class="menu">
   <ul class="navbar-menu">
-    <li><a href="#">КАТЕГОРИЯ 1</a></li>
-    <li><a href="#">КАТЕГОРИЯ 2</a></li>
-    <li><a href="#">КАТЕГОРИЯ 3</a></li>
-    <li><a href="#">КАТЕГОРИЯ 4</a></li>
+    <li><a href="category.php?category=1">КАТЕГОРИЯ 1</a></li>
+    <li><a href="category.php?category=2">КАТЕГОРИЯ 2</a></li>
+    <li><a href="category.php?category=3">КАТЕГОРИЯ 3</a></li>
+    <li><a href="category.php?category=4">КАТЕГОРИЯ 4</a></li>
     <li style="visibility: hidden; width: 288px;"></li>
   </ul>
   <ul class="navbar-login">

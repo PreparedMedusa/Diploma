@@ -136,10 +136,10 @@ h1{
   text-align: center;
 }
 .price-box{
-  position: relative;
+  position: absolute;
   width: 221px;
   height: 117px;
-  border: 1px solid #DBDBDB;
+  border-bottom: 1px solid #DBDBDB;
 }
 .price-old{
   display: block;
@@ -165,7 +165,7 @@ h1{
   text-align: center;
 }
 .buybtn{
-  margin-top: 17px;
+  margin-top: 134px;
   width: 129px;
   height: 39px;
   background-color: #Ed1651;

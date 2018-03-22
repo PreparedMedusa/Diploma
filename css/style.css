@@ -300,13 +300,13 @@ a:hover{
   padding-left: 27px;
 }
 .swiper-button-prev, .swiper-button-prev1{
-  background-image: url("../images/arrowLeft.png");
+  background-image: url("../images/arrowLeft.svg");
   background-size: auto;
   left:auto;
   right: 48px;
 }
 .swiper-button-next, .swiper-button-next1{
-  background-image: url("../images/arrowRight.png");
+  background-image: url("../images/arrowRight.svg");
   background-size: auto;
   left:auto;
   right: 25px;
@@ -337,16 +337,24 @@ a:hover{
   -webkit-align-items: center;
   align-items: center;
 }
-.swiper-slide > a> img{
+.swiperimg {
+  margin-top: 0;
+  height: 100%;
+  background-color: #fff;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* .swiper-slide > a> img{
   width: inherit;
   height: inherit;
   font: 35px Supermolot;
   color: #efeeef;
   text-align: left;
   background-position: center;
-}
+} */
 .swiper-slide > a{
-  width: 292px;
+  width: 291px;
   height: 235px;
   border-bottom: 1px solid #f6f6f6;
   position: absolute;

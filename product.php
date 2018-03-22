@@ -121,7 +121,7 @@
             $image=explode(",",$item['img']);?>
             <div class="swiper-slide">
               <a href="product.php?id=<?php echo $item['id'] ?>&category=<?php echo $item['category_id'] ?>">
-                <img src=<?php echo $image[0] ?> alt="Изображение товара">
+                <div class="swiperimg" style="background-image:url(<?php echo $image[0] ?>)"></div>
               </a>
               <div class="slider-bottom">
                 <a href="product.php?id=<?php echo $item['id'] ?>&category=<?php echo $item['category_id'] ?>">

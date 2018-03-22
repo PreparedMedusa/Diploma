@@ -21,3 +21,6 @@ h1{
   height: 78px;
   background-color: #ffffff;
 }
+.swiper-container{
+  height: auto;
+}

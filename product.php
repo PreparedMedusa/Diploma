@@ -149,6 +149,7 @@
     <script>
       var galleryTop = new Swiper('.gallery-top', {
         spaceBetween: 10,
+        effect: 'fade',
         navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
@@ -160,7 +161,7 @@
         centeredSlides: true,
         slidesPerView: 'auto',
         touchRatio: 0.2,
-        slideToClickedSlide: true,
+        slideToClickedSlide: true
       });
       galleryTop.controller.control = galleryThumbs;
       galleryThumbs.controller.control = galleryTop;

@@ -367,8 +367,10 @@ a:hover{
 }
 .slide-name>span{
   position: absolute;
+  height: 51px;
   top: 25px;
   left: 30px;
+  overflow: hidden;
   font: 14px Supermolot;
   color: #555555;
 }
